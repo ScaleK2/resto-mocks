@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brew & Grind | Prairiewood Café</title>
+  <meta name="description" content="Brew & Grind, located in Stockland Wetherill Park, offers expertly crafted coffee and all-day brunch in a relaxed, modern café atmosphere.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23e9f0ef%22/><path d=%22M18 28h28a8 8 0 1 1 0 16H38a10 10 0 0 1-20 0V28z%22 fill=%22%230f3c3f%22/></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brew: {
+              teal: '#0F3C3F',
+              light: '#E9F0EF',
+              beige: '#FDFBF9',
+              accent: '#4E7C7B'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+
+<body class="bg-brew-beige text-stone-800 font-sans">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 bg-brew-beige/95 backdrop-blur border-b border-stone-200 z-30">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <span class="font-bold text-brew-teal">Brew & Grind</span>
+      <nav class="space-x-6 text-sm hidden md:block">
+        <a href="#about" class="hover:text-brew-accent">About</a>
+        <a href="#menu" class="hover:text-brew-accent">Menu</a>
+        <a href="#reviews" class="hover:text-brew-accent">Reviews</a>
+        <a href="#visit" class="hover:text-brew-accent">Visit</a>
+      </nav>
+      <a href="#contact" class="text-sm bg-brew-teal text-white px-4 py-2 rounded-lg shadow hover:bg-brew-accent">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-brew-teal">Craft coffee & all-day brunch, done right.</h1>
+      <p class="mt-4 text-lg text-stone-700">Located in Stockland Wetherill Park — your go-to spot for great coffee, hearty food, and friendly faces.</p>
+      <div class="mt-6 space-x-3">
+        <a href="#menu" class="bg-brew-accent text-white px-5 py-3 rounded-lg shadow hover:bg-brew-teal">View Menu</a>
+        <a href="#contact" class="border border-brew-teal text-brew-teal px-5 py-3 rounded-lg hover:bg-brew-light/50">Call to Book</a>
+      </div>
+      <div class="mt-6 text-stone-600 text-sm flex gap-3">
+        <span>★ 4.3 (66 Google reviews)</span>
+        <span>•</span>
+        <span>$1 – 20 per person</span>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1605478858318-3e9a8d0fda6c?q=80&w=1200&auto=format&fit=crop" alt="Brew and Grind coffee and sandwich" class="w-full h-80 object-cover rounded-xl shadow">
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-brew-light py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold text-brew-teal">Great coffee. Easy vibes. Real food.</h2>
+        <p class="mt-4 leading-relaxed">Brew & Grind is a modern café set inside Stockland Wetherill Park. Known for expertly crafted coffee, fresh breakfasts, and quick, flavour-packed lunches. Perfect for catching up, solo dining, or grabbing a takeaway on the go.</p>
+        <ul class="mt-6 text-sm grid sm:grid-cols-2 gap-y-2">
+          <li>✅ Dine-in & Takeaway</li>
+          <li>✅ Breakfast & Lunch served all day</li>
+          <li>✅ Good for kids</li>
+          <li>✅ Card & mobile payments accepted</li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <img src="https://images.unsplash.com/photo-1601924928331-07fa3b0c7b48?q=80&w=800&auto=format&fit=crop" class="rounded-lg object-cover">
+        <img src="https://images.unsplash.com/photo-1590080875832-18d7b9ce8c1a?q=80&w=800&auto=format&fit=crop" class="rounded-lg object-cover">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop" class="rounded-lg object-cover">
+        <img src="https://images.unsplash.com/photo-1565958011705-44d4f2f4e4a4?q=80&w=800&auto=format&fit=crop" class="rounded-lg object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-brew-teal">Menu Highlights</h2>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1605478578740-efc6a39134a2?q=80&w=1200&auto=format&fit=crop" class="h-40 w-full object-cover">
+          <div class="p-4"><h3 class="font-semibold">Stacked Halloumi Bruschetta</h3><p class="text-sm text-stone-600 mt-1">$19 — Sourdough toast with fresh tomatoes, spinach & feta.</p></div>
+        </div>
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1200&auto=format&fit=crop" class="h-40 w-full object-cover">
+          <div class="p-4"><h3 class="font-semibold">Brekky Burger</h3><p class="text-sm text-stone-600 mt-1">$15 — Egg, bacon & avo on a milk bun.</p></div>
+        </div>
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1617196035978-961783f86b1d?q=80&w=1200&auto=format&fit=crop" class="h-40 w-full object-cover">
+          <div class="p-4"><h3 class="font-semibold">Caesar Salad</h3><p class="text-sm text-stone-600 mt-1">$16 — Crisp lettuce, bacon & parmesan tossed in creamy dressing.</p></div>
+        </div>
+        <div class="bg-white rounded-xl shadow overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600891964094-b9f24ff7e4d6?q=80&w=1200&auto=format&fit=crop" class="h-40 w-full object-cover">
+          <div class="p-4"><h3 class="font-semibold">French Toast</h3><p class="text-sm text-stone-600 mt-1">$20 — Fluffy brioche with maple syrup & ice cream.</p></div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <a href="https://scalek2.github.io/resto-mocks/brew-grind/menu.jpg" target="_blank" class="underline text-brew-accent">View full menu (image)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="bg-brew-light py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-brew-teal">What customers say</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <figure class="bg-white rounded-xl p-5 shadow">
+          <div class="text-yellow-500">★★★★★</div>
+          <blockquote class="mt-3 text-stone-700">Always great coffee & friendly staff. Perfect breakfast spot after the gym.</blockquote>
+          <figcaption class="mt-2 text-sm text-stone-500">– Google Reviewer</figcaption>
+        </figure>
+        <figure class="bg-white rounded-xl p-5 shadow">
+          <div class="text-yellow-500">★★★★★</div>
+          <blockquote class="mt-3 text-stone-700">Love the vibe and food quality. Halloumi bruschetta is a must-try!</blockquote>
+          <figcaption class="mt-2 text-sm text-stone-500">– Google Reviewer</figcaption>
+        </figure>
+        <figure class="bg-white rounded-xl p-5 shadow">
+          <div class="text-yellow-500">★★★★☆</div>
+          <blockquote class="mt-3 text-stone-700">Good value and fast service. A nice casual café for locals.</blockquote>
+          <figcaption class="mt-2 text-sm text-stone-500">– Google Reviewer</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold text-brew-teal">Visit Us</h2>
+        <p class="mt-3">561-583 Polding St, Prairiewood NSW 2176 <br>Located inside Stockland Wetherill Park Shopping Centre</p>
+        <iframe src="https://www.google.com/maps?q=561-583+Polding+St,+Prairiewood+NSW+2176&output=embed" class="w-full h-64 rounded-xl mt-4 border-0 shadow"></iframe>
+        <div class="mt-4 space-x-3">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=561-583+Polding+St,+Prairiewood+NSW+2176" target="_blank" class="bg-brew-accent text-white px-4 py-2 rounded shadow">Directions</a>
+          <a href="tel:+61451334611" class="border border-brew-teal text-brew-teal px-4 py-2 rounded">Call 0451 334 611</a>
+        </div>
+        <p class="mt-5 text-sm text-stone-600">Open daily 8 am – 5 pm · Closed 6 pm sharp <br>Casual atmosphere · Plenty of parking · Wheelchair accessible</p>
+      </div>
+
+      <div id="contact" class="bg-white p-6 rounded-xl shadow border border-stone-200">
+        <h3 class="text-xl font-semibold text-brew-teal">Contact Us</h3>
+        <p class="text-sm text-stone-600 mt-1">Walk-ins welcome · Call ahead for groups</p>
+        <a href="tel:+61451334611" class="block bg-brew-teal text-white text-center rounded-lg px-4 py-3 mt-4 hover:bg-brew-accent">Call to Book</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-8 text-sm text-stone-500 border-t border-stone-200">
+    Prototype site built by <strong>ScaleK2</strong> — for demo purposes only.
+  </footer>
+
+</body>
+</html>
